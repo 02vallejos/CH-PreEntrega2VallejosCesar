@@ -1,20 +1,22 @@
+
+/* link to font locally */
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url('../assets/fonts/Roboto-Regular.ttf');
+  }
+
 /* navbar */
 .navbar {
-    background-color: #c0c5cc;
     height: 80px;
+}
+.bg-ccolor {
+    background-color: #B4B4B8;
 }
 
 .navbar a {
     text-transform: none;
 }
 
-.navbar-brand {
-    color: white;
-}
-
-.navbar-link {
-    color: blanchedalmond;
-}
 .navbar-brand img {
     width: 50px; /* Ajusta según sea necesario */
     height: 48px; /* Ajusta según sea necesario */
@@ -26,12 +28,33 @@
 /*Body*/
 body {
     background-color: black;
-    font-family: 'Roboto';
+    font-family: 'Roboto-Regular';
 }
 
-/* main */
+/* main
+por alguna razon no me funciona el Sicky en el NavBar
+por eso tuve que colocar un margen arriba en el main para darle espacio*/
 main {
     margin-top: 80px;
+}
+
+.hero {
+    background-image: url('../assets/image/portadaTaller.jpg');
+    background-size: cover;
+    height: 600px;
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding: 30px;
+}
+
+.hero h1{
+    font-weight: bold;
+}
+
+.cover-text-h1, .cover-text-h2, .cover-text-p {
+    background-color: #B4B4B8;
 }
 
 /*Footer*/
@@ -48,9 +71,6 @@ footer {
     width: 70%;
     height: 50%;
 }
-
-
-
 
 /*Servicios*/
 .container-service {

@@ -7,12 +7,13 @@
 
 /* navbar */
 .bg-ccolor {
-    background-color: #070F2B;
+    background-color: #0d39d6;
 }
 
 .navbar a {
     text-transform: none;
     color: rgb(255, 255, 255);
+    cursor:default;
 }
 
 .offcanvas-header {
@@ -40,8 +41,10 @@ body {
     font-family: 'Roboto-Regular';
 }
 
+/* Sección principal */
+
+
 .hero {
-    /* background-image: url('../assets/image/portadaTaller.jpg'); */
     background: linear-gradient(to left bottom, transparent,  rgb(2, 2, 2)),
     url('../assets/image/portadaTaller.jpg');
     background-size: cover;
@@ -52,6 +55,7 @@ body {
     flex-direction: column;
     justify-content: center; 
     padding: 30px;
+    height: 100vh;
 }
 
 .hero h1{
@@ -62,9 +66,9 @@ body {
 .hero p {
     width: 50%;
     font-size:22px;
-
 }
-.cover-text-h1, .cover-text-h2, .cover-text-p {
+
+.hero-cover-text-h1, .hero-cover-text-h2, .hero-cover-text-p {
     background-color: #B4B4B8;
 }
 
@@ -137,7 +141,7 @@ footer {
     margin: 10px 0 10px 0;
 }
 
-/* DesckTop Firs */
+/* DesckTop First */
 @media (max-width: 576px)  {
     .bg-ccolor {
         background-color: #070F2B;
@@ -145,4 +149,27 @@ footer {
     .navbar-brand img {
         width: 280px;
     }
+
+    .hero {
+       height: 300px;
+         /* padding: 0; */
+    }
+
+    .card-img-top {
+        height: 300px;
+        
+    }
+
+    .hero-cover-text-h1, .hero-cover-text-h2, .hero-cover-text-p {
+       display: none;
+       padding: 0;
+    }
+
+    /* .hero-card-cover-text-h1, .hero-cover-text-h2, .hero-cover-text-p {
+
+    } */
+
+
+
+
 } 

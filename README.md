@@ -7,3 +7,7 @@ La clase .bg-ccolor es para personalizar el color del navbar. Pero se debe sacar
 
     /* background-image: url('../assets/image/portadaTaller.jpg'); */
     en la sección principal se cambión el estilo de la imagen para agregar un degradado.
+
+
+    #### Comando Git para ver las ramas
+    $ git log --oneline --decorate --graph --all
